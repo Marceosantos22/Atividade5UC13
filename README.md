@@ -1,5 +1,5 @@
 
-Link do Site Realizado: https://hotelmarresort.netlify.app
+Link do Site https://hotelmarresort.netlify.app
 
 
  ### Atividade 5
