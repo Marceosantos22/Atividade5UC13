@@ -198,7 +198,7 @@
       <div class="container" id="container-form">
         <div class="row" id="form">
           <!--FORMULÁRIO-->
-          <form action="" method="post" id="formulario">
+          <form action="" method="POST" id="formulario">
             <!-- GROUP 1 -->
             <div class="row d-flex justify-content-center" id="group1">
               <div class="col-sm-8 col-md-12 col-lg-5">
@@ -208,7 +208,7 @@
                     type="text"
                     class="form-control"
                     id="inputNome"
-                    aria-describedby="descricaoInputNome"
+                    aria-describedby="descricaoInputNome" name="nome"
                   />
                 </div>
               </div>
@@ -219,7 +219,7 @@
                     type="email"
                     class="form-control"
                     id="inputEmail"
-                    aria-describedby="descricaoInputEmail"
+                    aria-describedby="descricaoInputEmail" name="email"
                   />
                 </div>
               </div>
@@ -237,7 +237,7 @@
                     type="date"
                     class="form-control"
                     id="inputDateEntrada"
-                    aria-describedby="descricaoInputDateEntrada"
+                    aria-describedby="descricaoInputDateEntrada" name="entrada"
                   />
                 </div>
               </div>
@@ -250,7 +250,7 @@
                     type="date"
                     class="form-control"
                     id="inputDateSaida"
-                    aria-describedby="descricaoInputDateSaida"
+                    aria-describedby="descricaoInputDateSaida" name="saida"
                   />
                 </div>
               </div>
@@ -264,9 +264,9 @@
                   <label for="" class="form-label">Observação</label>
                   <textarea
                     class="form-control"
-                    name=""
+                    name="observacao"
                     id="inputObservacao"
-                    rows="3"
+                    rows="3" 
                   ></textarea>
                 </div>
               </div>
@@ -279,7 +279,7 @@
                     type="number"
                     class="form-control"
                     id="inputAdultos"
-                    aria-describedby="descricaoInputAdultos"
+                    aria-describedby="descricaoInputAdultos" name="adultos"
                   />
                   <label for="inputDateSaida" class="form-label" id="criancas"
                     >Crianças:</label
@@ -288,14 +288,14 @@
                     type="number"
                     class="form-control"
                     id="inputCriancas"
-                    aria-describedby="descricaoInputCriancas"
+                    aria-describedby="descricaoInputCriancas" name="criancas"
                   />
                 </div>
                 <div class="mb-5">
                   <button
-                    type="button"
+                    type="submit"
                     class="btn btn-primary btn-lg justify-content-center"
-                    id="bntEnviar"
+                    id="bntEnviar" value="Enviar"
                   >
                     Enviar
                   </button>
@@ -348,11 +348,14 @@
     </Div>
     </footer>
     <!-- FIM FOOTER -->
-        
+    
+    <!-- SCRIPTS BOOTSTRAP/JQUERY-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./JS/scriptReservas.js"></script>
   </body>
 </html>
