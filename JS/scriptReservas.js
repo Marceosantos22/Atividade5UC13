@@ -20,9 +20,11 @@ $(document).ready(function () {
 $(document).ready(function () {
     $.get("http://localhost:3000/cadastro", function (data, status) {
 
-            /*console.log(data);*/ // adicionado para teste 
+            console.log(data); /* adicionado pra teste */
             
-        data.forEach(function (registro) {
+            data.forEach(function (registro) {
+
+              
           var dataEntrada = new Date(registro.entrada);
           var dataSaida = new Date(registro.saida);
     
